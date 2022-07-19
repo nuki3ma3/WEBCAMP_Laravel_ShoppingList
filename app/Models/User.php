@@ -12,6 +12,12 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+ /**
+     * 複数代入不可能な属性
+     */
+    protected $guarded = ['id'];
+
+
     /**
      * The attributes that are mass assignable.
      *
