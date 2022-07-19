@@ -15,6 +15,8 @@
             名前：<input name="name" ><br>
             email：<input name="email" value="{{ old('email') }}"><br>
             パスワード：<input  name="password" type="password"><br>
+            パスワード(再登録)：<input  name="password_confirmation" type="password"><br>
+            
             <button>登録する</button>
         </form>
 @endsection

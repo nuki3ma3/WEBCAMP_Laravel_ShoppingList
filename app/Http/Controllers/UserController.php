@@ -45,11 +45,9 @@ class UserController extends Controller
         // データの取得
         $datum = $request->validated();
         //var_dump($datum); exit;
-
-      
-       
-         $datum['password'] = Hash::make($datum['password']);
-       
+   
+      $datum['password'] = Hash::make($datum['password']);
+        
 
         // テーブルへのINSERT
         try {
